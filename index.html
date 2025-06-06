@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travelling Websites</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h2>Horizon Hoppers</h2>
-    <ul>
-      <li>Discover</li>
-      <li>Trips</li>
-      <li>Review</li>
-      
-
-    </ul>
-    <button type="submit" name="signup" id="signup">Signup</button>
-  </header>
-  <section>
-    <h1 style="text-align: center;">Where To?</h1>
-  </section>
-  <section id="list">
-    <ul>
-      <li>Search All</li>
-      <li>Hotels</li>
-      <li>Things to Do</li>
-      <li>Restaurants</li>
-      <li>Flights</li>
-      <li>Vacation Rentals</li>
-    </ul>
-    
-
-
-
-
-
-  </section>
-  <section id="search">
-    <input type="text" placeholder="Please enter your interest" name="search" id="new"><button>Search</button>
-  </section>
-  <section class="images">
-     <div class="box1">
-    <img src="images/food.jpg" alt="Food">
-   </div>
-    <div class="box2">
-    <img src="images/travel.jpg" alt="Food"></div>
-    <div class="box3">
-
-    <img src="images/water.jpg" alt="Food"></div>
-
-    
-    
-
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling Websites</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="text-[#333333] bg-[#cec4b7] m-0 p-0">
+    <header class="flex items-center justify-between bg-[#f0f0f0]">
+      <h2>Horizon Hoppers</h2>
+      <ul
+        class="flex m-0 p-0 list-none gap-5 [&>*]:cursor-pointer [&>*]:font-bold"
+      >
+        <li>Discover</li>
+        <li>Trips</li>
+        <li>Review</li>
+      </ul>
+      <button
+        class="btn-primary hover:bg-blue-800 hover:scale-90 py-4 px-6"
+        type="submit"
+        name="signup"
+        id="signup"
+      >
+        Signup
+      </button>
+    </header>
+    <section class="mt-[50px]">
+      <h1 class="text-center font-extrabold">Where To?</h1>
+    </section>
+    <section id="list" class="mt-[50px]">
+      <ul
+        class="flex m-0 p-0 list-none gap-5 justify-center [&>*]:cursor-pointer [&>*]:font-bold"
+      >
+        <li>Search All</li>
+        <li>Hotels</li>
+        <li>Things to Do</li>
+        <li>Restaurants</li>
+        <li>Flights</li>
+        <li>Vacation Rentals</li>
+      </ul>
+    </section>
+    <section id="search" class="flex justify-center gap-[20px]">
+      <input
+        class="border-1 rounded-full w-[70%] p-3.5"
+        type="text"
+        placeholder="Please enter your interest"
+        name="search"
+        id="new"
+      /><button class="btn-primary hover:bg-blue-800 hover:scale-90">
+        Search
+      </button>
+    </section>
+    <section class="images flex justify-between gap-[20px] p-[20px]">
+      <div class="box1">
+        <img src="images/food.jpg" alt="Food" /><span>Food</span>
+      </div>
+      <div class="box2">
+        <img src="images/travel.jpg" alt="Food" />
+      </div>
+      <div class="box3">
+        <img src="images/water.jpg" alt="Food" />
+      </div>
+    </section>
+  </body>
 </html>
